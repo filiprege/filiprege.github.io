@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Portfolio</title>
+    <style>
+        /* The Design Engine - Minimalist & Clean */
+        :root {
+            --primary: #2c3e50; /* Professional Navy */
+            --accent: #3498db;  /* Tech Blue */
+            --bg: #f8f9fa;      /* Light Gray Background */
+            --text: #333;
+        }
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
+        
+        /* Layout */
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; background: white; min-height: 100vh; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+        
+        /* Header Section */
+        header { padding: 60px 20px; text-align: center; border-bottom: 2px solid var(--bg); }
+        h1 { margin: 0; color: var(--primary); font-size: 2.5rem; }
+        .subtitle { color: #666; font-size: 1.2rem; margin-top: 10px; font-weight: 300; }
+        .contact-links { margin-top: 20px; }
+        .contact-links a { text-decoration: none; color: white; background: var(--accent); padding: 8px 16px; border-radius: 4px; margin: 0 5px; font-weight: bold; font-size: 0.9rem; transition: background 0.2s; }
+        .contact-links a:hover { background: var(--primary); }
+
+        /* Sections */
+        section { padding: 40px 20px; border-bottom: 1px solid #eee; }
+        h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 15px; margin-bottom: 20px; }
+        
+        /* The "Blurb & Bullet" Project Cards */
+        .project { margin-bottom: 40px; }
+        .project-title { font-size: 1.4rem; font-weight: bold; margin-bottom: 5px; color: var(--primary); }
+        .project-role { font-style: italic; color: #666; font-size: 0.95rem; margin-bottom: 15px; }
+        
+        .blurb { background: #f1f8ff; padding: 15px; border-radius: 6px; border-left: 4px solid var(--accent); margin-bottom: 15px; }
+        .bullets ul { padding-left: 20px; }
+        .bullets li { margin-bottom: 8px; }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: #888; }
+        
+        /* Mobile Tweaks */
+        @media (max-width: 600px) {
+            .container { padding: 0; }
+            header { padding: 40px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Your Name Here</h1>
+        <div class="subtitle">Mechanical Design Engineer | CAD Specialist | FEA Analyst</div>
+        <div class="contact-links">
+            <a href="mailto:email@example.com">Email Me</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a results-oriented Engineer with 5+ years of experience in product design and manufacturing. 
+            I specialize in taking complex concepts from the "napkin sketch" phase to mass production. 
+            My expertise lies in SolidWorks, thermal analysis, and reducing production costs through DFMA principles.
+        </p>
+    </section>
+
+    <section>
+        <h2>Key Projects</h2>
+
+        <div class="project">
+            <div class="project-title">Next-Gen Cooling System</div>
+            <div class="project-role">Lead Design Engineer | 2023</div>
+            
+            <div class="blurb">
+                <strong>The Challenge:</strong> Tasked with redesigning the cooling loop for a high-performance server rack. The goal was to increase thermal capacity by 20% without increasing the physical footprint or noise levels.
+            </div>
+
+            <div class="bullets">
+                <ul>
+                    <li>Designed a custom copper fin geometry that increased surface area by <strong>25%</strong> within the same volume.</li>
+                    <li>Utilized ANSYS Fluent to optimize airflow paths, reducing fan power consumption by <strong>15%</strong>.</li>
+                    <li>Managed the prototyping phase and delivered the first functional unit <strong>2 weeks ahead of schedule</strong>.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Automated Assembly Fixture</div>
+            <div class="project-role">Manufacturing Engineer | 2021</div>
+            
+            <div class="blurb">
+                <strong>The Challenge:</strong> Production throughput was bottlenecked by a manual alignment process that resulted in a 12% reject rate. I owned the design and implementation of a semi-automated solution.
+            </div>
+
+            <div class="bullets">
+                <ul>
+                    <li>Engineered a pneumatic clamping fixture that improved cycle time by <strong>40%</strong> (from 5 mins to 3 mins).</li>
+                    <li>Reduced the reject rate from 12% to <strong>less than 1%</strong>, saving approximately $50k annually in scrap material.</li>
+                    <li>Created full documentation and SOPs, training 15 operators on the new system in under 2 days.</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        &copy; 2025 Your Name. Built with GitHub Pages.
+    </footer>
+
+</div>
+
+</body>
+</html>
